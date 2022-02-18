@@ -48,7 +48,7 @@ CONNECTION_STRING = "{drivername}://{user}:{passwd}@{host}:{port}/{db_name}".for
 
 **Enable/disable pipelines:** <br />
 Note:
-If you don't want to use Database Simply comment out bellow piplines middlewares in settings.py:
+If you don't want to use Database Simply comment out bellow piplines in settings.py:
 ```
 ITEM_PIPELINES = {
    'blockChainWebsites.pipelines.BlockchainwebsitesPipeline': 300,
@@ -57,8 +57,8 @@ ITEM_PIPELINES = {
 ```
 
 **Run:** <br />
-1) Run for default Excel Urls file :<br />```scrapy crawl live_coint -o data.csv```  (-o filename.csv will generate data csv file ) <br/>
-2) Pass another excel file by command:<br/>```scrapy crawl live_coint -a start_page=integer_pagenumber -o OUTPUT_FILE.csv``` <br/>
+1) Run for default Url:<br />```scrapy crawl live_coint -o data.csv```  (-o filename.csv will generate data csv file ) <br/>
+2) Pass start page parameter by command:<br/>```scrapy crawl live_coint -a start_page=integer_pagenumber -o OUTPUT_FILE.csv``` <br/>
 
 
 **Cancel Process:** <br />
